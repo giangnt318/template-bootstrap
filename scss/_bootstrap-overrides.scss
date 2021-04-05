@@ -7,15 +7,37 @@ a {
   }
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn {
+  height: 38px;
+  font-size: 14px;
+  border-radius: $border-radius;
+  font-weight: 400 !important;
+  box-shadow: unset !important;
+}
+
+.bg-info {
+  background-color: $info !important;
+}
+
 .btn-primary {
-  background-color: $primary !important;
-  border-color: $primary !important;
+  background-color: $secondary !important;
+  border-color: $secondary !important;
   color: $white !important;
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($primary, 10%) !important;
-    border-color: darken($primary, 10%) !important;
+    background-color: darken($secondary, 10%) !important;
+    border-color: darken($secondary, 10%) !important;
   }
 }
 
@@ -28,6 +50,42 @@ a {
   &:active {
     background-color: darken($secondary, 10%) !important;
     border-color: darken($secondary, 10%) !important;
+  }
+}
+
+.btn-info {
+  background-color: $info !important;
+  border-color: $info !important;
+  color: $white !important;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($info, 10%) !important;
+    border-color: darken($info, 10%) !important;
+  }
+}
+
+.btn-success {
+  background-color: $success !important;
+  border-color: $success !important;
+  color: $white !important;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($success, 10%) !important;
+    border-color: darken($success, 10%) !important;
+  }
+}
+
+.btn-danger {
+  background-color: $danger !important;
+  border-color: $danger !important;
+  color: $white !important;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($danger, 10%) !important;
+    border-color: darken($danger, 10%) !important;
   }
 }
 
@@ -50,4 +108,85 @@ a {
 
 .text-secondary {
   color: $secondary !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus,
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.1rem $secondary !important;
+}
+
+.breadcrumb {
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: .55rem 1rem;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-bottom: 0;
+  .breadcrumb-item.active {
+    color: $black;
+  }
+}
+
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.input-search {
+  .icon-search {
+    width: 38px;
+    height: 38px;
+    background: #2d9cdb;
+    background-image: url("../img/loupe.svg");
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 10px;
+  }
+  input.form-control {
+    border: 1px solid #2d9cdb;
+    background: #2d9cdb;
+    color: $white;
+    padding-left: 0;
+    &::placeholder {
+      font-size: 14px;
+      color: $white;
+    }
+  }
+}
+
+.input-group {
+  width: auto;
+  input.form-control {
+    border-radius: $border-radius;
+  }
+}
+
+.form-check {
+  min-height: 1rem;
+  margin-bottom: 0;
+}
+.form-check-input:checked {
+  background-color: $success;
+  border-color: $success;
+}
+.form-control:focus, .btn.focus, .btn:focus, .form-select:focus, .form-check-input:focus {
+  box-shadow: unset !important;
+}
+.form-check-input:checked[type=radio] {
+  background-image: url("../img/checked.svg") !important;
+}
+.form-control, .form-select {
+  color: $gray-800 !important;
+  border-radius: $border-radius;
+  font-size: $font-size-default;
+}
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  border-radius: $border-radius;
+  margin-top: 0px;
+  margin-right: 8px;
 }

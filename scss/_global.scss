@@ -6,6 +6,7 @@ html {
 
 body {
   @include body-font;
+  font-size: $font-size-default;
 }
 
 // Custom Button Size
@@ -86,4 +87,25 @@ h6 {
   i {
     font-weight: 800;
   }
+}
+
+.fit-content {
+  width: fit-content;
+}
+.border-none {
+  border: unset !important;
+}
+.table {
+  th:hover {
+    background-color: $gray;
+  }
+}
+.table-gray {
+  background-color: $gray;
+}
+.table-dark td, .table-dark th, .table-dark thead th {
+  border-color: $gray;
+}
+.w-15 {
+  width: 15%;
 }

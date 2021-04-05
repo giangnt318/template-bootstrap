@@ -16,6 +16,31 @@
   border-left: 1px solid fade-out($white, 0.9);
 }
 
+.bg-primary {
+  background: $primary;
+}
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link{
+  color: $white !important;
+  padding-right: 2.5rem;
+}
+.navbar-light .nav-item {
+  color: $white !important;
+  //padding: .5rem 1rem;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../img/menu.svg");
+}
+.navbar-brand {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .sidebar-nav {
   position: absolute;
   top: 0;
