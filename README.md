@@ -4,7 +4,7 @@
 To begin using this template, choose one of the following options to get started:
 
 * [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/stylish-portfolio/)
-* Clone the repo: `https://github.com/giangnt318/template-bootstrap.git`
+* Clone the repo: `https://github.com/giangnt318/template-bootstrap/tree/master`
 
 ## Usage
 
