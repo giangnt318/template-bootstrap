@@ -4,11 +4,6 @@ html {
   height: 100%;
 }
 
-body {
-  @include body-font;
-  font-size: $font-size-default;
-}
-
 // Custom Button Size
 .btn-xl {
   padding: 1.25rem 2.5rem;
@@ -21,24 +16,12 @@ body {
 }
 
 .content-section-heading {
-  h2 {
-    font-size: 3rem;
-  }
   h3 {
-    font-size: 1rem;
     text-transform: uppercase;
   }
 }
 
 // Typography
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
 
 .text-faded {
   color: fade-out($white, 0.3);

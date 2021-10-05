@@ -1,0 +1,37 @@
+$--icon-s: 24px;
+$--icon-m: 32px;
+$--icon-l: 48px;
+$--icon-xl: 64px;
+
+$size-icons:
+  "xl" $--icon-xl,
+  "l" $--icon-l,
+  "m" $--icon-m,
+  "s" $--icon-s;
+
+@each $name, $size in $size-icons {
+  .icon-#{$name} {
+    display: inline-block;
+    min-width: $size;
+    height: $size;
+    font-size: $size;
+    background-size: $size !important;
+  }
+}
+
+$icons:
+  "user",
+  "key",
+  "shield";
+
+@each $name in $icons {
+  .ql-icon-#{$name} {
+    background: url("../img/#{$name}.svg") no-repeat 50% 50%;
+  }
+}
+
+.ql-icon-shield {
+  margin-top: -8px;
+  min-width: 97px !important;
+  height: 111px !important;
+}

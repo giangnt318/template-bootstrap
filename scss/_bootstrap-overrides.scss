@@ -8,12 +8,10 @@ a {
 }
 
 h3 {
-  font-size: 16px;
   font-weight: 500;
 }
 
 h4 {
-  font-size: 14px;
   font-weight: 500;
 }
 
@@ -105,6 +103,9 @@ h4 {
 .text-primary {
   color: $primary !important;
 }
+.text-info {
+  color: $info !important;
+}
 
 .text-secondary {
   color: $secondary !important;
@@ -129,11 +130,14 @@ h4 {
     color: $black;
   }
 }
-
-.container-fluid {
-  padding-left: 30px;
-  padding-right: 30px;
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  .container-fluid {
+    padding: 7px 30px;
+  }
 }
+
 
 .input-search {
   .icon-search {
