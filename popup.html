@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Phần mềm quản lý dữ liệu</title>
+
+  <!-- Bootstrap Core CSS -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  <link href="css/main.min.css" rel="stylesheet">
+
+</head>
+
+<body id="sign-in">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand text-bold text-l" href="index.html">Phần mềm quản lý dữ liệu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav navbar-nav-scroll ml-auto align-items-center">
+        <li class="nav-item">
+          <span class="nav-link text-xs">
+            Ngày 5/5/2021
+          </span>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i class="icon-user"></i>
+          <a class="nav-link text-l" href="#">User</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <a class="nav-link text-xs pr-2" href="login.html">Đăng xuất</a>
+          <i class="data-management icon-logout"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="popup">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#popup1">
+    Confirm save
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="popup1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-info text-center">
+          <h4 class="modal-title text-uppercase text-l text-white w-100">
+            Bạn có muốn lưu dữ liệu
+          </h4>
+        </div>
+        <div class="modal-body d-flex justify-content-center p-4">
+          <div class="mr-5">
+            <button type="button" class="btn btn-success btn-icon rounded">
+              <i class="ql-icon-checked icon-xs"></i>
+            </button>
+            <span class="ml-2 text-xs">Lưu và thoát</span>
+          </div>
+          <div class="ml-5">
+            <button type="button" class="btn btn-danger btn-icon rounded">
+              <i class="ql-icon-close icon-xs"></i>
+            </button>
+            <span class="ml-2 text-xs">Không lưu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#popup2">
+    Complete savings
+  </button>
+  <div class="modal fade" id="popup2" tabindex="-1" aria-labelledby="popup2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-info text-center">
+          <h4 class="modal-title text-uppercase text-l text-white w-100">
+            Bạn có muốn lưu dữ liệu
+          </h4>
+        </div>
+        <div class="modal-body d-flex justify-content-center p-4">
+          <div>
+            <button type="button" class="btn btn-success btn-icon rounded">
+              <i class="ql-icon-checked icon-xs"></i>
+            </button>
+            <span class="ml-2 text-xs">Bạn đã lưu dữ liệu thành công</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#popup3">
+    Confirm delete
+  </button>
+  <div class="modal fade" id="popup3" tabindex="-1" aria-labelledby="popup3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-center">
+          <h4 class="modal-title text-uppercase text-l text-white w-100">
+            Bạn có muốn xóa dữ liệu
+          </h4>
+        </div>
+        <div class="modal-body d-flex justify-content-center p-4">
+          <div class="mr-5">
+            <button type="button" class="btn btn-success btn-icon rounded">
+              <i class="ql-icon-checked icon-xs"></i>
+            </button>
+            <span class="ml-2 text-xs">Xóa ngay</span>
+          </div>
+          <div class="ml-5">
+            <button type="button" class="btn btn-danger btn-icon rounded">
+              <i class="ql-icon-close icon-xs"></i>
+            </button>
+            <span class="ml-2 text-xs">Không xóa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#popup4">
+    Deleted
+  </button>
+  <div class="modal fade" id="popup4" tabindex="-1" aria-labelledby="popup2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-center">
+          <h4 class="modal-title text-uppercase text-l text-white w-100">
+            Bạn có muốn lưu dữ liệu
+          </h4>
+        </div>
+        <div class="modal-body d-flex justify-content-center p-4">
+          <div>
+            <button type="button" class="btn btn-success btn-icon rounded">
+              <i class="ql-icon-checked icon-xs"></i>
+            </button>
+            <span class="ml-2 text-xs">Bạn đã xóa dữ liệu thành công</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+
+</html>
