@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Phần mềm quản lý dữ liệu</title>
+
+  <!-- Bootstrap Core CSS -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  <link href="css/main.min.css" rel="stylesheet">
+
+</head>
+
+<body id="sign-in">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand text-bold text-l" href="index.html">Phần mềm quản lý dữ liệu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav navbar-nav-scroll ml-auto align-items-center">
+        <li class="nav-item">
+          <span class="nav-link text-xs">
+            Ngày 5/5/2021
+          </span>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i class="icon-user"></i>
+          <a class="nav-link text-l" href="#">User</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <a class="nav-link text-xs pr-2" href="login.html">Đăng xuất</a>
+          <i class="data-management icon-logout"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active"><a href="#">Nhân vật</a></li>
+  <li class="breadcrumb-item" aria-current="page">Quản lý thông tin nhân vật</li>
+  <li class="breadcrumb-item" aria-current="page">Danh sách</li>
+</ol>
+
+<nav class="navbar navbar-expand-lg navbar-secondary bg-secondary color-default mb-5">
+  <div class="container-fluid px-0">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Danh mục</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mới sưu tầm
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hiện vật</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Nhân vật</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tài liệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Phim ảnh</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Băng đĩa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Báo cáo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Triển lãm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hướng dẫn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="popup">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#popup1">
+    click to open popup "Danh sach lien ket"
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="popup1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h4 class="modal-title text-l text-white w-100">
+            Danh sách liên kết
+          </h4>
+        </div>
+        <div class="modal-body artifacts m-4 p-0">
+          <div>
+            <ul class="nav nav-tabs nav-bg-info border-bottom-info">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Hiện vật liên kết</a>
+              </li>
+              <li class="nav-item bg-light-gray">
+                <a class="nav-link" href="#">Nhân vật liên kết</a>
+              </li>
+              <li class="nav-item bg-light-gray">
+                <a class="nav-link" href="#">Tài liệu liên kết</a>
+              </li>
+              <li class="nav-item bg-light-gray">
+                <a class="nav-link" href="#">Phim ảnh liên kết</a>
+              </li>
+              <li class="nav-item bg-light-gray">
+                <a class="nav-link" href="#">Băng đĩa liên kết</a>
+              </li>
+            </ul>
+            <div class="action">
+              <div class="search-artifacts d-flex align-items-center mr-3">
+                <input type="text" class="form-control" placeholder="Tìm kiếm">
+                <button class="btn bg-light-blue btn-sm btn-search px-3">
+                  <i class="ql-icon-search icon-xs m-1"></i>
+                  Tìm kiếm
+                </button>
+              </div>
+              <button class="btn btn-info mr-2">
+                <i class="d-block ql-icon-plus icon-xs"></i>
+              </button>
+              <button class="btn btn-danger">
+                <i class="d-block ql-icon-close icon-xs"></i>
+              </button>
+            </div>
+          </div>
+
+          <table class="table table-hover table-striped align-middle mb-0">
+            <thead class="table-gray border-0">
+            <tr>
+              <th scope="col">STT</th>
+              <th scope="col">Thumbnail</th>
+              <th scope="col">TG đăng ký</th>
+              <th scope="col">Số đăng ký</th>
+              <th scope="col">Tên hiện vật</th>
+              <th scope="col">Nội dung tóm tắt</th>
+              <th scope="col">SL</th>
+              <th scope="col">Chất liệu</th>
+              <th scope="col">Tình trạng</th>
+              <th scope="col">Niên đại</th>
+              <th scope="col">Chỉnh sửa</th>
+              <th scope="col">Active</th>
+              <th scope="col">Xóa</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="text-center">1</td>
+              <td></td>
+              <td>1/1/2021</td>
+              <td>1010</td>
+              <td>Huy hiệu đại biểu QH</td>
+              <td>Của đồng chí ...., đại biểu QH khóa I</td>
+              <td class="text-center">1</td>
+              <td class="text-center">Giấy</td>
+              <td>Chưa rõ</td>
+              <td class="text-center">1945</td>
+              <td class="text-center">
+                <i class="ql-icon-edit icon-s hover"></i>
+              </td>
+              <td class="text-center">
+                <i class="icon bg-success ql-icon-checked icon-xs hover"></i>
+              </td>
+              <td class="text-center">
+                <i class="icon bg-danger ql-icon-close icon-xs hover"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">2</td>
+              <td></td>
+              <td>1/1/2021</td>
+              <td>1010</td>
+              <td>Huy hiệu đại biểu QH</td>
+              <td>Của đồng chí ...., đại biểu QH khóa I</td>
+              <td class="text-center">1</td>
+              <td class="text-center">Giấy</td>
+              <td>Chưa rõ</td>
+              <td class="text-center">1945</td>
+              <td class="text-center">
+                <i class="ql-icon-edit icon-s hover"></i>
+              </td>
+              <td class="text-center">
+                <i class="icon bg-success ql-icon-checked icon-xs hover"></i>
+              </td>
+              <td class="text-center">
+                <i class="icon bg-danger ql-icon-close icon-xs hover"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">3</td>
+              <td></td>
+              <td>1/1/2021</td>
+              <td>1010</td>
+              <td>Huy hiệu đại biểu QH</td>
+              <td>Của đồng chí ...., đại biểu QH khóa I</td>
+              <td class="text-center">1</td>
+              <td class="text-center">Giấy</td>
+              <td>Chưa rõ</td>
+              <td class="text-center">1945</td>
+              <td class="text-center">
+                <i class="ql-icon-edit icon-s hover"></i>
+              </td>
+              <td class="text-center">
+                <i class="icon bg-success ql-icon-checked icon-xs hover"></i>
+              </td>
+              <td class="text-center">
+                <i class="icon bg-danger ql-icon-close icon-xs hover"></i>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <nav class="d-flex align-items-center justify-content-between bg-light-gray py-2 px-3">
+            <div class="form-check text-xs">
+              <input class="form-check-input" type="checkbox">
+              <label class="form-check-label text-dark">
+                Hiển thị toàn bộ hiện vật Active và Không Active
+              </label>
+            </div>
+            <p class="pagination text-dark mb-0">
+              1 - 3 của 3 hiện vật
+            </p>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>

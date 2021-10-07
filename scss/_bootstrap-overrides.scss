@@ -25,6 +25,19 @@ h4 {
 
 .bg-info {
   background-color: $info !important;
+  border-color: $info !important;
+}
+.bg-success {
+  background-color: $success !important;
+  border-color: $success !important;
+}
+.bg-danger {
+  background-color: $danger !important;
+  border-color: $danger !important;
+}
+.bg-dark {
+  background-color: $gray-800 !important;
+  border-color: $gray-800 !important;
 }
 
 .btn-primary {
@@ -60,6 +73,17 @@ h4 {
   &:active {
     background-color: darken($info, 10%) !important;
     border-color: darken($info, 10%) !important;
+  }
+}
+.bg-light-blue {
+  background-color: $light-blue !important;
+  border-color: $light-blue !important;
+  color: $white !important;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($light-blue, 10%) !important;
+    border-color: darken($light-blue, 10%) !important;
   }
 }
 
@@ -117,6 +141,11 @@ h4 {
 .btn-primary.focus, .btn-primary:focus {
   box-shadow: 0 0 0 0.1rem $secondary !important;
 }
+.dropdown-toggle {
+  &:after {
+    color: $gray-500;
+  }
+}
 
 .breadcrumb {
   font-size: 12px;
@@ -134,7 +163,7 @@ h4 {
   padding-top: 0;
   padding-bottom: 0;
   .container-fluid {
-    padding: 7px 30px;
+    padding: 0 30px;
   }
 }
 

@@ -26,7 +26,10 @@ $icons:
   "key",
   "shield",
   "checked",
-  "close";
+  "close",
+  "plus",
+  "search",
+  "edit";
 
 @each $name in $icons {
   .ql-icon-#{$name} {
