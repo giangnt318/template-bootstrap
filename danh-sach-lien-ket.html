@@ -125,8 +125,8 @@
             Danh sách liên kết
           </h4>
         </div>
-        <div class="modal-body artifacts m-4 p-0">
-          <div>
+        <div class="modal-body relation m-4 p-0">
+          <div class="menu-relation">
             <ul class="nav nav-tabs nav-bg-info border-bottom-info">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Hiện vật liên kết</a>
@@ -145,14 +145,14 @@
               </li>
             </ul>
             <div class="action">
-              <div class="search-artifacts d-flex align-items-center mr-3">
+              <div class="search-relation d-flex align-items-center mr-3">
                 <input type="text" class="form-control" placeholder="Tìm kiếm">
                 <button class="btn bg-light-blue btn-sm btn-search px-3">
                   <i class="ql-icon-search icon-xs m-1"></i>
                   Tìm kiếm
                 </button>
               </div>
-              <button class="btn btn-info mr-2">
+              <button class="btn btn-info mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
                 <i class="d-block ql-icon-plus icon-xs"></i>
               </button>
               <button class="btn btn-danger">
@@ -261,6 +261,158 @@
     </div>
   </div>
 
+  <!--  popup for action add relation-->
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-add-relation">
+      <div class="modal-content">
+        <div class="modal-header bg-info">
+          <h4 class="modal-title text-l text-white w-100">
+            Thêm Danh sách liên kết
+          </h4>
+        </div>
+        <div class="modal-body relation m-4 p-0">
+          <div class="row">
+            <div class="d-flex mb-4 offset-md-10 col-2 align-item-end justify-content-end">
+              <button class="btn btn-success mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <i class="d-block ql-icon-checked icon-xs"></i>
+              </button>
+              <button class="btn btn-danger mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                <i class="d-block ql-icon-close icon-xs"></i>
+              </button>
+              <button class="btn bg-light-blue">
+                <i class="d-block ql-icon-reload icon-s"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="row ml-5">
+            <div class="d-flex align-items-center col-10 mb-3">
+              <label class="input-group-text label-relation" for="inputGroupSelect01">Hiện vật</label>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected disabled>Chọn hiện vật...</option>
+                <option value="1">Hiện vật 1</option>
+                <option value="2">Hiện vật 2</option>
+                <option value="3">Hiện vật 3</option>
+              </select>
+            </div>
+            <div class="col-2">
+              <div class="d-flex justify-content-end ml-3">
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-green-checked icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-red-close icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2">
+                  <i class="d-block ql-icon-blue-reload icon-s"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row ml-5">
+            <div class="d-flex align-items-center col-10 mb-3">
+              <label class="input-group-text label-relation" for="inputGroupSelect01">Nhân vật</label>
+              <select class="form-select" id="inputGroupSelect02">
+                <option selected disabled>Chọn nhân vật...</option>
+                <option value="1">Nhân vật 1</option>
+                <option value="2">Nhân vật 2</option>
+                <option value="3">Nhân vật 3</option>
+              </select>
+            </div>
+            <div class="col-2">
+              <div class="d-flex justify-content-end ml-3">
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-green-checked icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-red-close icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2">
+                  <i class="d-block ql-icon-blue-reload icon-s"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row ml-5">
+            <div class="d-flex align-items-center col-10 mb-3">
+              <label class="input-group-text label-relation" for="inputGroupSelect01">Tài liệu</label>
+              <select class="form-select" id="inputGroupSelect03">
+                <option selected disabled>Chọn tài liệu...</option>
+                <option value="1">Tài liệu 1</option>
+                <option value="2">Tài liệu 2</option>
+                <option value="3">Tài liệu 3</option>
+              </select>
+            </div>
+            <div class="col-2">
+              <div class="d-flex justify-content-end ml-3">
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-green-checked icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-red-close icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2">
+                  <i class="d-block ql-icon-blue-reload icon-s"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row ml-5">
+            <div class="d-flex align-items-center col-10 mb-3">
+              <label class="input-group-text label-relation" for="inputGroupSelect01">Phim ảnh</label>
+              <select class="form-select" id="inputGroupSelect04">
+                <option selected disabled>Chọn phim ảnh...</option>
+                <option value="1">Phim ảnh 1</option>
+                <option value="2">Phim ảnh 2</option>
+                <option value="3">Phim ảnh 3</option>
+              </select>
+            </div>
+            <div class="col-2">
+              <div class="d-flex justify-content-end ml-3">
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-green-checked icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-red-close icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2">
+                  <i class="d-block ql-icon-blue-reload icon-s"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row ml-5">
+            <div class="d-flex align-items-center col-10 mb-3">
+              <label class="input-group-text label-relation" for="inputGroupSelect01">Băng đĩa</label>
+              <select class="form-select" id="inputGroupSelect05">
+                <option selected disabled>Chọn băng đĩa...</option>
+                <option value="1">Băng đĩa 1</option>
+                <option value="2">Băng đĩa 2</option>
+                <option value="3">Băng đĩa 3</option>
+              </select>
+            </div>
+            <div class="col-2">
+              <div class="d-flex justify-content-end ml-3">
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-green-checked icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                  <i class="d-block ql-icon-red-close icon-xs"></i>
+                </button>
+                <button class="btn bg-light-gray-2">
+                  <i class="d-block ql-icon-blue-reload icon-s"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

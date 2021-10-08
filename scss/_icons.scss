@@ -26,9 +26,13 @@ $icons:
   "key",
   "shield",
   "checked",
+  "green-checked",
+  "red-close",
   "close",
   "plus",
   "search",
+  "blue-reload",
+  "reload",
   "edit";
 
 @each $name in $icons {

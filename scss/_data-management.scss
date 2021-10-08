@@ -140,6 +140,16 @@
     color: $black !important;
   }
 }
+.bg-light-gray-2 {
+  color: $white;
+  background: $gray;
+  a {
+    color: $black !important;
+  }
+  &:hover {
+    background: darken($gray, 10%);
+  }
+}
 
 .nav-tabs {
   .nav-item {
@@ -179,8 +189,10 @@
   }
 }
 
-.modal-body.artifacts {
-  position: relative;
+.modal-body.relation {
+  .menu-relation {
+    position: relative;
+  }
   .action {
     position: absolute;
     top: 0;
@@ -204,7 +216,7 @@
   .ql-icon-search {
     margin-top: 2px;
   }
-  .search-artifacts {
+  .search-relation {
     margin-top: -1px;
   }
   .icon {
@@ -215,5 +227,21 @@
   .form-check-input:checked {
     background-color: $gray-800;
     border-color: $gray-800;
+  }
+}
+
+.modal-dialog.modal-add-relation {
+  margin-top: 10%;
+  .ql-icon-reload {
+    background-size: 20px !important;
+  }
+  .label-relation {
+    width: 200px;
+    height: 40px;
+    background-color: $gray-200;
+  }
+  .form-select {
+    height: 40px;
+    margin-left: -5px;
   }
 }

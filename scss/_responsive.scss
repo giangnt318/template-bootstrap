@@ -3,6 +3,11 @@
     max-width: 568px;
   }
 }
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 80%;
+  }
+}
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 90%;

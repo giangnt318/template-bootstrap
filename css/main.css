@@ -10,6 +10,12 @@
   }
 }
 
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 80%;
+  }
+}
+
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 90%;
@@ -37,6 +43,8 @@
 body {
   font-family: "Inter", sans-serif !important;
   font-weight: 400;
+  background: url("../img/background.png") no-repeat 50% 50%;
+  background-size: 100%;
 }
 
 .text-center {
@@ -548,6 +556,19 @@ html {
   color: #4F4F4F !important;
 }
 
+.bg-light-gray-2 {
+  color: #fff;
+  background: #e0e0e0;
+}
+
+.bg-light-gray-2 a {
+  color: #4F4F4F !important;
+}
+
+.bg-light-gray-2:hover {
+  background: #c7c7c7;
+}
+
 .nav-tabs .nav-item {
   margin-right: 5px;
 }
@@ -585,11 +606,11 @@ html {
   line-height: 1.2;
 }
 
-.modal-body.artifacts {
+.modal-body.relation .menu-relation {
   position: relative;
 }
 
-.modal-body.artifacts .action {
+.modal-body.relation .action {
   position: absolute;
   top: 0;
   right: 0;
@@ -597,13 +618,13 @@ html {
   align-items: center;
 }
 
-.modal-body.artifacts input.form-control {
+.modal-body.relation input.form-control {
   height: 40px;
   width: 200px;
   border-radius: 0;
 }
 
-.modal-body.artifacts .btn-search {
+.modal-body.relation .btn-search {
   width: 100%;
   height: 40px;
   display: flex;
@@ -612,23 +633,42 @@ html {
   border-bottom-left-radius: 0;
 }
 
-.modal-body.artifacts .ql-icon-search {
+.modal-body.relation .ql-icon-search {
   margin-top: 2px;
 }
 
-.modal-body.artifacts .search-artifacts {
+.modal-body.relation .search-relation {
   margin-top: -1px;
 }
 
-.modal-body.artifacts .icon {
+.modal-body.relation .icon {
   width: 24px;
   height: 24px;
   border-radius: 2px;
 }
 
-.modal-body.artifacts .form-check-input:checked {
+.modal-body.relation .form-check-input:checked {
   background-color: #343a40;
   border-color: #343a40;
+}
+
+.modal-dialog.modal-add-relation {
+  margin-top: 10%;
+}
+
+.modal-dialog.modal-add-relation .ql-icon-reload {
+  background-size: 20px !important;
+}
+
+.modal-dialog.modal-add-relation .label-relation {
+  width: 200px;
+  height: 40px;
+  background-color: #e9ecef;
+}
+
+.modal-dialog.modal-add-relation .form-select {
+  height: 40px;
+  margin-left: -5px;
 }
 
 a {
@@ -1290,6 +1330,14 @@ h4 {
   background: url("../img/checked.svg") no-repeat 50% 50%;
 }
 
+.ql-icon-green-checked {
+  background: url("../img/green-checked.svg") no-repeat 50% 50%;
+}
+
+.ql-icon-red-close {
+  background: url("../img/red-close.svg") no-repeat 50% 50%;
+}
+
 .ql-icon-close {
   background: url("../img/close.svg") no-repeat 50% 50%;
 }
@@ -1300,6 +1348,14 @@ h4 {
 
 .ql-icon-search {
   background: url("../img/search.svg") no-repeat 50% 50%;
+}
+
+.ql-icon-blue-reload {
+  background: url("../img/blue-reload.svg") no-repeat 50% 50%;
+}
+
+.ql-icon-reload {
+  background: url("../img/reload.svg") no-repeat 50% 50%;
 }
 
 .ql-icon-edit {
@@ -1319,7 +1375,7 @@ h4 {
 #login-form {
   display: block;
   width: 568px;
-  margin: 10% auto 0 auto;
+  margin: 15% auto 0 auto;
   background: #fff;
 }
 
@@ -1461,7 +1517,7 @@ h4 {
   display: block;
   width: 70%;
   padding: 0 25px;
-  background: #fff;
+  background: transparent;
 }
 
 #popup .modal-header {
