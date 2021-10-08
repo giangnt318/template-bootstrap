@@ -223,3 +223,32 @@ h4 {
   margin-top: 0px;
   margin-right: 8px;
 }
+
+li.k-button {
+  background-color: $info;
+  border-color: $info;
+  background-image: unset;
+  span {
+    color: $white !important;
+  }
+  &:hover {
+    background-color: $info !important;;
+    border-color: $info !important;;
+  }
+}
+.k-list-container {
+  border-color: $white !important;
+  background-color: $white !important;;
+}
+.k-list-scroller {
+  .k-item.k-state-selected {
+    background-color: $info !important;
+    border-color: $info !important;;
+  }
+}
+k-list .k-state-selected {
+  color: $info;
+  background-color: transparent;
+  border-color: transparent !important;
+  background-image: unset;
+}

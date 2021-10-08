@@ -922,6 +922,38 @@ h4 {
   margin-right: 8px;
 }
 
+li.k-button {
+  background-color: #2F80ED;
+  border-color: #2F80ED;
+  background-image: unset;
+}
+
+li.k-button span {
+  color: #fff !important;
+}
+
+li.k-button:hover {
+  background-color: #2F80ED !important;
+  border-color: #2F80ED !important;
+}
+
+.k-list-container {
+  border-color: #fff !important;
+  background-color: #fff !important;
+}
+
+.k-list-scroller .k-item.k-state-selected {
+  background-color: #2F80ED !important;
+  border-color: #2F80ED !important;
+}
+
+k-list .k-state-selected {
+  color: #2F80ED;
+  background-color: transparent;
+  border-color: transparent !important;
+  background-image: unset;
+}
+
 .w-25 {
   width: 25% !important;
 }
