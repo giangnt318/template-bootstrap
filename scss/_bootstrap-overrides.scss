@@ -1,3 +1,7 @@
+$text-3xs: 12px;
+$text-2xs: 13px;
+$text-xs: 15px;
+
 a {
   color: $primary;
   &:hover,
@@ -211,10 +215,16 @@ h4 {
 .form-check-input:checked[type=radio] {
   background-image: url("../img/checked.svg") !important;
 }
+.form-select {
+  padding: 0;
+}
 .form-control, .form-select {
   color: $gray-800 !important;
   border-radius: $border-radius;
   font-size: $font-size-default;
+  &:focus {
+    outline: unset;
+  }
 }
 .form-check-input {
   width: 20px;
@@ -251,4 +261,97 @@ k-list .k-state-selected {
   background-color: transparent;
   border-color: transparent !important;
   background-image: unset;
+}
+
+.bootstrap-select.ql-multiselect {
+  .btn {
+    height: auto;
+    padding: .532rem .75rem;
+  }
+  .btn-light {
+    border-color: $gray-400;
+  }
+  .filter-option-inner {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+  .dropdown-toggle:after {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  .dropdown-item {
+    &.selected {
+      color: $info;
+    }
+    &:active {
+      color: $white;
+    }
+  }
+  .dropdown-menu {
+    font-size: 15px;
+  }
+  .bs-ok-default {
+    &:after {
+      border-width: 0 .15em .15em 0;
+    }
+  }
+}
+
+.bootstrap-select {
+  .dropdown-toggle:focus {
+    outline: unset !important;
+  }
+}
+
+//style input date
+[type="date"] {
+  background:#fff url("../img/calendar.svg")  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.border-0, .border-0 td {
+  border: unset !important;
+}
+
+// style main menu
+.main-menu .dropdown-menu {
+  &.show {
+    border-bottom: 9px solid $secondary;
+    box-shadow: 0px 3px 3px 1px $gray-500;
+  }
+  .dropdown-divider {
+    margin: .5rem 1rem;
+  }
+  .dropdown-item {
+    color: $black;
+    font-size: 13px;
+    font-weight: 500;
+    &:hover, &.active {
+      color: $black;
+      background-color: lighten($info, 25%);
+    }
+  }
+}
+
+// style table
+.table {
+  th {
+    font-weight: 500;
+  }
+}
+
+// button
+.btn-sm {
+  height: 26px !important;
+  line-height: 1;
+  font-size: $text-2xs;
 }

@@ -13,3 +13,26 @@
     max-width: 90%;
   }
 }
+
+@media (max-width: 1366px) {
+  .bg-secondary .navbar-collapse .navbar-nav li.nav-item .nav-link {
+     padding: 0.25rem .85rem!important;
+   }
+  .navbar .container, .container {
+    min-width: 95%;
+  }
+  .modal-body {
+    &.collection .search-relation .form-control{
+      width: 7rem;
+    }
+    .table>:not(caption)>*>* {
+      padding: .5rem .25rem;
+    }
+  }
+}
+
+@media (min-width: 1367px) {
+  .navbar .container {
+    min-width: 95%;
+  }
+}

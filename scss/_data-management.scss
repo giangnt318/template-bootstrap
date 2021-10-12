@@ -1,3 +1,7 @@
+.row {
+  margin: auto 0;
+}
+
 .portfolio-item {
   display: block;
   position: relative;
@@ -58,6 +62,11 @@
 .hover {
   &:hover {
     cursor: pointer;
+  }
+}
+.hover-none {
+  &:hover {
+    cursor: unset;
   }
 }
 
@@ -150,6 +159,9 @@
     background: darken($gray, 10%);
   }
 }
+.bg-light-gray-3 {
+  background: #f2f2f2;
+}
 
 .nav-tabs {
   .nav-item {
@@ -189,13 +201,14 @@
   }
 }
 
-.modal-body.relation {
+
+.modal-body.relation, .modal-body.collection {
   .menu-relation {
     position: relative;
   }
   .action {
     position: absolute;
-    top: 0;
+    top: -2px;
     right: 0;
     display: flex;
     align-items: center;
@@ -219,15 +232,11 @@
   .search-relation {
     margin-top: -1px;
   }
-  .icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 2px;
-  }
-  .form-check-input:checked {
-    background-color: $gray-800;
-    border-color: $gray-800;
-  }
+}
+
+.ql-confirm-pagination.form-check-input:checked {
+  background-color: $gray-800;
+  border-color: $gray-800;
 }
 
 .modal-dialog.modal-add-relation {
@@ -235,13 +244,119 @@
   .ql-icon-reload {
     background-size: 20px !important;
   }
-  .label-relation {
-    width: 200px;
-    height: 40px;
-    background-color: $gray-200;
-  }
   .form-select {
     height: 40px;
     margin-left: -5px;
+  }
+}
+.relation, .collection {
+  .icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+  }
+}
+.relation {
+  .label-relation {
+    width: 200px;
+    background-color: $gray-200;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+  }
+  .ql-multiselect {
+    button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  .select-relation {
+    width: calc(100% - 80px);
+  }
+  .quantity {
+    max-width: 80px;
+    text-align: center;
+  }
+}
+
+.table>:not(caption)>*>* {
+  border-bottom-width: 0;
+}
+.ql-table {
+  th {
+    line-height: 2;
+    text-align: center;
+  }
+  th, tr td {
+    min-height: 50px;
+    border-right: 1px solid $gray-500;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+  }
+}
+
+
+#artifacts {
+  .search-relation .form-control {
+    width: 20rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+  }
+  .btn-advanced-search, .btn-search {
+    height: 40px;
+  }
+  .btn-search {
+    min-width: 120px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.caption-table {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  color: $white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#advanced-search {
+  .btn {
+    color: $black;
+  }
+  .btn-search, .btn-show-all, .btn-hide {
+    transition: .3s;
+    &:hover {
+      color: $white;
+      .ql-icon-search, .ql-icon-checked, .ql-icon-close {
+        filter: unset;
+      }
+    }
+  }
+  .btn-search {
+    border: 2px solid $success;
+    &:hover {
+      background-color: $success;
+    }
+  }
+  .btn-show-all {
+    border: 2px solid $info;
+    &:hover {
+      background-color: $info;
+    }
+  }
+  .btn-hide {
+    border: 2px solid $danger;
+    &:hover {
+      background-color: $danger;
+    }
+  }
+  .ql-icon-search, .ql-icon-checked, .ql-icon-close {
+    filter: invert(88%);
   }
 }

@@ -22,6 +22,27 @@
   }
 }
 
+@media (max-width: 1366px) {
+  .bg-secondary .navbar-collapse .navbar-nav li.nav-item .nav-link {
+    padding: 0.25rem 0.85rem !important;
+  }
+  .navbar .container, .container {
+    min-width: 95%;
+  }
+  .modal-body.collection .search-relation .form-control {
+    width: 7rem;
+  }
+  .modal-body .table > :not(caption) > * > * {
+    padding: .5rem .25rem;
+  }
+}
+
+@media (min-width: 1367px) {
+  .navbar .container {
+    min-width: 95%;
+  }
+}
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.ttf");
@@ -42,6 +63,8 @@
 
 body {
   font-family: "Inter", sans-serif !important;
+  color: #4F4F4F;
+  font-size: 15px;
   font-weight: 400;
   background: url("../img/background.png") no-repeat 50% 50%;
   background-size: 100%;
@@ -285,6 +308,19 @@ html {
   width: 15%;
 }
 
+.border-right {
+  border-right: 1px solid #ced4da;
+}
+
+.border-left {
+  border-left: 1px solid #ced4da;
+}
+
+.border-left-right {
+  border-left: 1px solid #ced4da;
+  border-right: 1px solid #ced4da;
+}
+
 /* Side Menu */
 #sidebar-wrapper {
   position: fixed;
@@ -397,6 +433,10 @@ html {
   background: #343a40;
 }
 
+.row {
+  margin: auto 0;
+}
+
 .portfolio-item {
   display: block;
   position: relative;
@@ -469,6 +509,10 @@ html {
 
 .hover:hover {
   cursor: pointer;
+}
+
+.hover-none:hover {
+  cursor: unset;
 }
 
 .icon-user {
@@ -569,6 +613,10 @@ html {
   background: #c7c7c7;
 }
 
+.bg-light-gray-3 {
+  background: #f2f2f2;
+}
+
 .nav-tabs .nav-item {
   margin-right: 5px;
 }
@@ -606,25 +654,25 @@ html {
   line-height: 1.2;
 }
 
-.modal-body.relation .menu-relation {
+.modal-body.relation .menu-relation, .modal-body.collection .menu-relation {
   position: relative;
 }
 
-.modal-body.relation .action {
+.modal-body.relation .action, .modal-body.collection .action {
   position: absolute;
-  top: 0;
+  top: -2px;
   right: 0;
   display: flex;
   align-items: center;
 }
 
-.modal-body.relation input.form-control {
+.modal-body.relation input.form-control, .modal-body.collection input.form-control {
   height: 40px;
   width: 200px;
   border-radius: 0;
 }
 
-.modal-body.relation .btn-search {
+.modal-body.relation .btn-search, .modal-body.collection .btn-search {
   width: 100%;
   height: 40px;
   display: flex;
@@ -633,21 +681,15 @@ html {
   border-bottom-left-radius: 0;
 }
 
-.modal-body.relation .ql-icon-search {
+.modal-body.relation .ql-icon-search, .modal-body.collection .ql-icon-search {
   margin-top: 2px;
 }
 
-.modal-body.relation .search-relation {
+.modal-body.relation .search-relation, .modal-body.collection .search-relation {
   margin-top: -1px;
 }
 
-.modal-body.relation .icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 2px;
-}
-
-.modal-body.relation .form-check-input:checked {
+.ql-confirm-pagination.form-check-input:checked {
   background-color: #343a40;
   border-color: #343a40;
 }
@@ -660,15 +702,127 @@ html {
   background-size: 20px !important;
 }
 
-.modal-dialog.modal-add-relation .label-relation {
-  width: 200px;
-  height: 40px;
-  background-color: #e9ecef;
-}
-
 .modal-dialog.modal-add-relation .form-select {
   height: 40px;
   margin-left: -5px;
+}
+
+.relation .icon, .collection .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+}
+
+.relation .label-relation {
+  width: 200px;
+  background-color: #e9ecef;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.relation .ql-multiselect button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.relation .select-relation {
+  width: calc(100% - 80px);
+}
+
+.relation .quantity {
+  max-width: 80px;
+  text-align: center;
+}
+
+.table > :not(caption) > * > * {
+  border-bottom-width: 0;
+}
+
+.ql-table th {
+  line-height: 2;
+  text-align: center;
+}
+
+.ql-table th, .ql-table tr td {
+  min-height: 50px;
+  border-right: 1px solid #BDBDBD;
+}
+
+.ql-table .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+}
+
+#artifacts .search-relation .form-control {
+  width: 20rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+#artifacts .btn-advanced-search, #artifacts .btn-search {
+  height: 40px;
+}
+
+#artifacts .btn-search {
+  min-width: 120px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.caption-table {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#advanced-search .btn {
+  color: #4F4F4F;
+}
+
+#advanced-search .btn-search, #advanced-search .btn-show-all, #advanced-search .btn-hide {
+  transition: .3s;
+}
+
+#advanced-search .btn-search:hover, #advanced-search .btn-show-all:hover, #advanced-search .btn-hide:hover {
+  color: #fff;
+}
+
+#advanced-search .btn-search:hover .ql-icon-search, #advanced-search .btn-search:hover .ql-icon-checked, #advanced-search .btn-search:hover .ql-icon-close, #advanced-search .btn-show-all:hover .ql-icon-search, #advanced-search .btn-show-all:hover .ql-icon-checked, #advanced-search .btn-show-all:hover .ql-icon-close, #advanced-search .btn-hide:hover .ql-icon-search, #advanced-search .btn-hide:hover .ql-icon-checked, #advanced-search .btn-hide:hover .ql-icon-close {
+  filter: unset;
+}
+
+#advanced-search .btn-search {
+  border: 2px solid #27AE60;
+}
+
+#advanced-search .btn-search:hover {
+  background-color: #27AE60;
+}
+
+#advanced-search .btn-show-all {
+  border: 2px solid #2F80ED;
+}
+
+#advanced-search .btn-show-all:hover {
+  background-color: #2F80ED;
+}
+
+#advanced-search .btn-hide {
+  border: 2px solid #EB5757;
+}
+
+#advanced-search .btn-hide:hover {
+  background-color: #EB5757;
+}
+
+#advanced-search .ql-icon-search, #advanced-search .ql-icon-checked, #advanced-search .ql-icon-close {
+  filter: invert(88%);
 }
 
 a {
@@ -908,10 +1062,18 @@ h4 {
   background-image: url("../img/checked.svg") !important;
 }
 
+.form-select {
+  padding: 0;
+}
+
 .form-control, .form-select {
   color: #343a40 !important;
   border-radius: 3px;
   font-size: 14px;
+}
+
+.form-control:focus, .form-select:focus {
+  outline: unset;
 }
 
 .form-check-input {
@@ -952,6 +1114,96 @@ k-list .k-state-selected {
   background-color: transparent;
   border-color: transparent !important;
   background-image: unset;
+}
+
+.bootstrap-select.ql-multiselect .btn {
+  height: auto;
+  padding: .532rem .75rem;
+}
+
+.bootstrap-select.ql-multiselect .btn-light {
+  border-color: #ced4da;
+}
+
+.bootstrap-select.ql-multiselect .filter-option-inner {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.bootstrap-select.ql-multiselect .dropdown-toggle:after {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.bootstrap-select.ql-multiselect .dropdown-item.selected {
+  color: #2F80ED;
+}
+
+.bootstrap-select.ql-multiselect .dropdown-item:active {
+  color: #fff;
+}
+
+.bootstrap-select.ql-multiselect .dropdown-menu {
+  font-size: 15px;
+}
+
+.bootstrap-select.ql-multiselect .bs-ok-default:after {
+  border-width: 0 .15em .15em 0;
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+  outline: unset !important;
+}
+
+[type="date"] {
+  background: #fff url("../img/calendar.svg") 97% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+}
+
+.border-0, .border-0 td {
+  border: unset !important;
+}
+
+.main-menu .dropdown-menu.show {
+  border-bottom: 9px solid #FFCC01;
+  box-shadow: 0px 3px 3px 1px #BDBDBD;
+}
+
+.main-menu .dropdown-menu .dropdown-divider {
+  margin: .5rem 1rem;
+}
+
+.main-menu .dropdown-menu .dropdown-item {
+  color: #4F4F4F;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.main-menu .dropdown-menu .dropdown-item:hover, .main-menu .dropdown-menu .dropdown-item.active {
+  color: #4F4F4F;
+  background-color: #a4c8f7;
+}
+
+.table th {
+  font-weight: 500;
+}
+
+.btn-sm {
+  height: 26px !important;
+  line-height: 1;
+  font-size: 13px;
 }
 
 .w-25 {
@@ -1388,6 +1640,14 @@ k-list .k-state-selected {
 
 .ql-icon-reload {
   background: url("../img/reload.svg") no-repeat 50% 50%;
+}
+
+.ql-icon-arrow-right {
+  background: url("../img/arrow-right.svg") no-repeat 50% 50%;
+}
+
+.ql-icon-connection {
+  background: url("../img/connection.svg") no-repeat 50% 50%;
 }
 
 .ql-icon-edit {

@@ -92,3 +92,14 @@ html {
 .w-15 {
   width: 15%;
 }
+
+.border-right {
+  border-right: 1px solid $gray-400;
+}
+.border-left {
+  border-left: 1px solid $gray-400;
+}
+.border-left-right {
+  border-left: 1px solid $gray-400;
+  border-right: 1px solid $gray-400;
+}
