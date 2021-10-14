@@ -29,11 +29,17 @@
   .navbar .container, .container {
     min-width: 95%;
   }
+  .nav-tabs .nav-link {
+    padding: 5px 10px !important;
+  }
   .modal-body.collection .search-relation .form-control {
     width: 7rem;
   }
   .modal-body .table > :not(caption) > * > * {
     padding: .5rem .25rem;
+  }
+  .modal-body.relation .menu-relation input.form-control, .modal-body.collection .menu-relation input.form-control {
+    max-width: 200px;
   }
 }
 
@@ -584,7 +590,7 @@ html {
 
 .bg-gray {
   color: #fff;
-  background: #495057;
+  background: #828282;
 }
 
 .bg-gray a {
@@ -658,6 +664,14 @@ html {
   position: relative;
 }
 
+.modal-body.relation .menu-relation .nav-tabs .nav-link, .modal-body.collection .menu-relation .nav-tabs .nav-link {
+  height: 46px;
+  line-height: 2;
+  font-weight: 500;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
 .modal-body.relation .action, .modal-body.collection .action {
   position: absolute;
   top: -2px;
@@ -668,7 +682,7 @@ html {
 
 .modal-body.relation input.form-control, .modal-body.collection input.form-control {
   height: 40px;
-  width: 200px;
+  width: 220px;
   border-radius: 0;
 }
 
@@ -772,6 +786,13 @@ html {
   border-bottom-left-radius: 0;
 }
 
+#artifacts-detail .media .title {
+  height: 50px;
+  line-height: 50px;
+  color: #4F4F4F;
+  font-weight: 500;
+}
+
 .caption-table {
   height: 50px;
   line-height: 50px;
@@ -825,6 +846,28 @@ html {
   filter: invert(88%);
 }
 
+.content-relation .input-group-text {
+  min-width: 11em;
+  font-size: 15px;
+  font-weight: bold;
+  background: transparent;
+  border: unset;
+}
+
+#general-information .protection {
+  width: calc(100% - 11em);
+}
+
+#general-information .ql-icon-recycle-bin {
+  width: 24px;
+  height: 22px;
+  border-radius: 3px;
+}
+
+#general-information .ql-icon-recycle-bin:hover {
+  cursor: pointer;
+}
+
 a {
   color: #E23C3C;
 }
@@ -839,6 +882,14 @@ h3 {
 
 h4 {
   font-weight: 500;
+}
+
+.card {
+  border-radius: 2px !important;
+}
+
+.text-dark {
+  color: #4F4F4F;
 }
 
 .btn {
@@ -1206,6 +1257,10 @@ k-list .k-state-selected {
   font-size: 13px;
 }
 
+.modal-content {
+  background-color: #f2f2f2;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -1220,6 +1275,22 @@ k-list .k-state-selected {
 
 .w-100 {
   width: 100% !important;
+}
+
+.mw-25 {
+  max-width: 25% !important;
+}
+
+.mw-50 {
+  max-width: 50% !important;
+}
+
+.mw-75 {
+  max-width: 75% !important;
+}
+
+.mw-100 {
+  max-width: 100% !important;
 }
 
 .h-25 {
@@ -1650,6 +1721,26 @@ k-list .k-state-selected {
   background: url("../img/connection.svg") no-repeat 50% 50%;
 }
 
+.ql-icon-left-arrow {
+  background: url("../img/left-arrow.svg") no-repeat 50% 50%;
+}
+
+.ql-icon-double-left-arrows {
+  background: url("../img/double-left-arrows.svg") no-repeat 50% 50%;
+}
+
+.ql-icon-right-arrow {
+  background: url("../img/right-arrow.svg") no-repeat 50% 50%;
+}
+
+.ql-icon-double-right-arrows {
+  background: url("../img/double-right-arrows.svg") no-repeat 50% 50%;
+}
+
+.ql-icon-recycle-bin {
+  background: url("../img/recycle-bin.svg") no-repeat 50% 50%;
+}
+
 .ql-icon-edit {
   background: url("../img/edit.svg") no-repeat 50% 50%;
 }
@@ -1662,6 +1753,10 @@ k-list .k-state-selected {
 
 .rounded {
   border-radius: 50% !important;
+}
+
+.ql-icon-left-arrow, .ql-icon-right-arrow {
+  background-size: 8px !important;
 }
 
 #login-form {

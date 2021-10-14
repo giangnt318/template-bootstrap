@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Phần mềm quản lý dữ liệu</title>
+
+  <!-- Bootstrap Core CSS -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/css/bootstrap-select.min.css">
+  <!-- Custom CSS -->
+  <link href="css/main.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta2/dist/js/bootstrap-select.min.js"></script>
+
+</head>
+
+<body id="sign-in">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand text-bold text-l" href="index.html">Phần mềm quản lý dữ liệu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav navbar-nav-scroll ml-auto align-items-center">
+        <li class="nav-item">
+          <span class="nav-link text-xs">
+            Ngày 5/5/2021
+          </span>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i class="icon-user"></i>
+          <a class="nav-link text-l" href="#">User</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <a class="nav-link text-xs pr-2" href="login.html">Đăng xuất</a>
+          <i class="data-management icon-logout"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item active"><a href="#">Nhân vật</a></li>
+  <li class="breadcrumb-item" aria-current="page">Quản lý thông tin nhân vật</li>
+  <li class="breadcrumb-item" aria-current="page">Danh sách</li>
+</ol>
+
+<nav class="main-menu navbar navbar-expand-lg navbar-secondary bg-secondary color-default">
+  <div class="container px-0">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="home-page.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Trang chủ
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="home-page.html">TRANG CHỦ</a></li>
+            <li><a class="dropdown-item" href="#">BÁO CÁO HIỆN VẬT</a></li>
+            <li><a class="dropdown-item" href="#">HỘ CHIẾU HIỆN VẬT</a></li>
+            <li><a class="dropdown-item" href="#">GIAO NHẬN HIỆN VẬT</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">BÁO CÁO PHIM ẢNH</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">VĂN BẢN</a></li>
+            <li><a class="dropdown-item" href="#">LOẠI VĂN BẢN</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="home-page.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Hiện vật
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">QUẢN LÝ HIỆN VẬT</a></li>
+            <li><a class="dropdown-item" href="#">PHÂN LOẠI HIỆN VẬT</a></li>
+            <li><a class="dropdown-item" href="#">CHUYÊN ĐỀ HIỆN VẬT</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="home-page.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            NHÂN VẬT
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">QUẢN LÝ NHÂN VẬT</a></li>
+            <li><a class="dropdown-item" href="#">PHÂN LOẠI NHÂN VẬT</a></li>
+            <li><a class="dropdown-item" href="#">CHUYÊN ĐỀ NHÂN VẬT</a></li>
+            <li><a class="dropdown-item" href="#">TÌNH TRẠNG NHÂN VẬT</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="home-page.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            TƯ LIỆU
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">QUẢN LÝ TÀI LIỆU</a></li>
+            <li><a class="dropdown-item" href="#">PHÂN LOẠI TÀI LIỆU</a></li>
+            <li><a class="dropdown-item" href="#">CHUYÊN ĐỀ TÀI LIỆU</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">QUẢN LÝ PHIM ẢNH</a></li>
+            <li><a class="dropdown-item" href="#">PHÂN LOẠI PHIM ẢNH</a></li>
+            <li><a class="dropdown-item" href="#">CHUYÊN ĐỀ PHIM ẢNH</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">QUẢN LÝ BĂNG ĐĨA</a></li>
+            <li><a class="dropdown-item" href="#">PHÂN LOẠI BĂNG </a></li>
+            <li><a class="dropdown-item" href="#">PHÂN LOẠI ĐĨA</a></li>
+            <li><a class="dropdown-item" href="#">CHUYÊN ĐỀ BĂNG ĐĨA</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="home-page.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SỰ KIỆN
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">QUẢN LÝ TRIỂN LÃM</a></li>
+            <li><a class="dropdown-item" href="#">TRẠNG THÁI TRIỂN LÃM</a></li>
+            <li><a class="dropdown-item" href="#">TÌNH TRẠNG TRIỂN LÃM</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">QUẢN LÝ TRƯNG BÀY</a></li>
+            <li><a class="dropdown-item" href="#">TRẠNG THÁI TRƯNG BÀY</a></li>
+            <li><a class="dropdown-item" href="#">TÌNH TRẠNG TRƯNG BÀY</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="home-page.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            DANH MỤC
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">QUẢN LÝ NGƯỜI DÙNG</a></li>
+            <li><a class="dropdown-item" href="#">QUẢN LÝ PHÒNG BAN</a></li>
+            <li><a class="dropdown-item active" href="danh-muc-bo-suu-tap.html">BỘ SƯU TẬP</a></li>
+            <li><a class="dropdown-item" href="#">CHUYÊN ĐỀ CHUNG</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">CHUYÊN ĐỀ CHUNG</a></li>
+            <li><a class="dropdown-item" href="#">NIÊN ĐẠI</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">LOẠI CHỦ SỞ HỮU</a></li>
+            <li><a class="dropdown-item" href="#">CHỦ SỞ HỮU</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">VỊ TRÍ LƯU TRỮ</a></li>
+            <li><a class="dropdown-item" href="#">ĐỊA DANH</a></li>
+            <li><a class="dropdown-item" href="#">MÀU SẮC</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="home-page.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            LƯU CHUYỂN
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">ĐỀ XUẤT LƯU CHUYỂN</a></li>
+            <li><a class="dropdown-item" href="#">TÌNH TRẠNG LƯU CHUYỂN</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="artifacts-detail">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-info mt-5" data-bs-toggle="modal" data-bs-target="#popup1">
+    click to open popup "Thông tin chi tiết hiện vật"
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="popup1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header bg-light-gray text-dark py-2">
+          <h4 class="modal-title text-l w-75 px-4">
+            Thông tin chi tiết hiện vật
+          </h4>
+          <div class="action d-flex justify-content-end w-25">
+            <button class="btn btn-success mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+              <i class="d-block ql-icon-checked icon-xs"></i>
+            </button>
+            <button class="btn btn-danger mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+              <i class="d-block ql-icon-close icon-xs"></i>
+            </button>
+            <button class="btn bg-light-blue">
+              <i class="d-block ql-icon-reload icon-s"></i>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body relation m-4 px-4 py-0">
+          <div class="arrow-bar col-3 offset-md-3">
+            <i class="ql-icon-double-left-arrows icon-xs hover mr-2"></i>
+            <i class="ql-icon-left-arrow icon-xs hover mr-2"></i>
+            <i class="ql-icon-right-arrow icon-xs hover mr-2"></i>
+            <i class="ql-icon-double-right-arrows icon-xs hover"></i>
+          </div>
+          <div class="row mt-3 mb-5">
+            <div class="media col-3 pl-0 pr-5">
+              <div class="title text-center bg-light-gray-2 text-l mb-3">
+                Media
+              </div>
+              <div class="card mb-3">
+                <div class="card-header bg-white text-bold">
+                  Hình ảnh
+                </div>
+                <div class="card-body bg-light-gray py-5 text-center">
+                  Thumbnail
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-header bg-white text-bold">
+                  Video
+                </div>
+                <div class="card-body bg-light-gray py-5 text-center">
+                  Thumbnail
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-header bg-white text-bold">
+                  3D
+                </div>
+                <div class="card-body bg-light-gray py-5 text-center">
+                  Thumbnail
+                </div>
+              </div>
+            </div>
+            <div class="col-9 px-0">
+              <div class="menu-relation mb-3">
+                <ul class="nav nav-tabs border-bottom-secondary" role="tablist">
+                  <li class="nav-item bg-gray" role="presentation">
+                    <a class="nav-link active"
+                       data-bs-toggle="tab"
+                       href="#general-information"
+                       role="tab"
+                       aria-controls="general-information"
+                       aria-selected="true">
+                      Thông tin chung
+                    </a>
+                  </li>
+                  <li class="nav-item bg-gray" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                      Nội dung HV
+                    </a>
+                  </li>
+                  <li class="nav-item bg-gray">
+                    <a class="nav-link" data-bs-toggle="tab" href="#sources" role="tab" aria-controls="sources" aria-selected="false">
+                      Nguồn gốc
+                    </a>
+                  </li>
+                  <li class="nav-item bg-gray">
+                    <a class="nav-link" href="#">Kích thước. TL</a>
+                  </li>
+                  <li class="nav-item bg-gray">
+                    <a class="nav-link" href="#">TT Lưu trữ</a>
+                  </li>
+                  <li class="nav-item bg-gray">
+                    <a class="nav-link" href="#">Triển lãm</a>
+                  </li>
+                  <li class="nav-item bg-gray">
+                    <a class="nav-link" href="#">File đính kèm</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content content-relation">
+                <div class="tab-pane fade show active" id="general-information" role="tabpanel">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Tên gọi</span>
+                    <input type="text" class="form-control" placeholder="Huy hiệu đại biểu QH">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Số lượng</span>
+                    <input type="number" value="1" class="form-control mw-25">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Tình trạng</span>
+                    <input type="text" class="form-control" placeholder="Cũ, chưa rõ, tróc sơn">
+                  </div>
+                  <div class="d-flex mb-3">
+                    <div class="input-group w-50">
+                      <span class="input-group-text">Đề xuất lưu chuyển</span>
+                      <select class="form-select mw-50" aria-label="Chọn">
+                        <option selected>Chuyển kho tạm</option>
+                        <option value="2">Chuyển kho chính thức</option>
+                      </select>
+                    </div>
+                    <div class="input-group w-50">
+                      <span class="input-group-text pl-5">Tình trạng lưu chuyển</span>
+                      <select class="form-select mw-50 ml-auto" aria-label="Chọn">
+                        <option selected>Chờ duyệt</option>
+                        <option value="2">Bổ sung thông tin</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <div class="input-group w-50">
+                      <span class="input-group-text">Số đăng ký</span>
+                      <input type="number" value="1" class="form-control mw-50">
+                    </div>
+                    <div class="input-group w-50">
+                      <span class="input-group-text pl-5">Phân loại Kho cơ sở</span>
+                      <select class="form-select mw-50 ml-auto" aria-label="Chọn">
+                        <option selected>Kho giấy</option>
+                        <option value="2">Kho gốm sứ</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <div class="input-group w-50">
+                      <span class="input-group-text">Số phân loại</span>
+                      <input type="number" value="1" class="form-control mw-50">
+                    </div>
+                    <div class="input-group w-50">
+                      <span class="input-group-text pl-5">Người nhập liệu</span>
+                      <input type="text" class="form-control ml-auto mw-50">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <div class="input-group w-50">
+                      <span class="input-group-text">Thời gian đăng ký</span>
+                      <input type="date" value="2021-12-12" class="form-control mw-50">
+                    </div>
+                    <div class="input-group w-50">
+                      <span class="input-group-text pl-5">Người đăng ký</span>
+                      <input type="text" class="form-control ml-auto mw-50">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <div class="input-group w-50">
+                      <span class="input-group-text">Ngày tiếp nhận</span>
+                      <input type="date" value="2021-12-12" class="form-control mw-50">
+                    </div>
+                    <div class="input-group w-50">
+                      <span class="input-group-text pl-5">Năm sưu tầm</span>
+                      <input type="number" value="2021" class="form-control ml-auto mw-50">
+                    </div>
+                  </div>
+                  <div class="d-flex col-12 mb-3 pl-0">
+                    <div class="d-flex align-items-stretch mr-2 select-relation">
+                      <label class="input-group-text">Bộ sưu tập</label>
+                      <select class="selectpicker ql-multiselect w-100" multiple placeholder="Chọn Bộ sưu tập">
+                        <option>Bộ sưu tập 1</option>
+                        <option>Bộ sưu tập 2</option>
+                        <option>Bộ sưu tập 3</option>
+                      </select>
+                    </div>
+                    <input type="number" value="1" class="form-control ml-auto quantity">
+                    <div class="d-flex justify-content-end ml-2">
+                      <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                        <i class="d-block ql-icon-green-checked icon-xs"></i>
+                      </button>
+                      <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                        <i class="d-block ql-icon-red-close icon-xs"></i>
+                      </button>
+                      <button class="btn bg-light-gray-2">
+                        <i class="d-block ql-icon-blue-reload icon-s"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="input-group align-items-start mb-3">
+                    <span class="input-group-text">Chế độ bảo mật</span>
+                    <div class="protection">
+                      <div class="border p-2 d-flex bg-white justify-content-around mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Công khai
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Hạn chế
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                          <label class="form-check-label" for="flexRadioDefault3">
+                            Bảo mật
+                          </label>
+                        </div>
+                      </div>
+                      <div class="border p-2 d-flex bg-white">
+                        <div class="d-flex pl-5 col-5">
+                          <div class="form-check mr-5">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault4" checked>
+                            <label class="form-check-label" for="flexRadioDefault4">
+                              Hiển thị
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault5">
+                            <label class="form-check-label" for="flexRadioDefault5">
+                              Ẩn
+                            </label>
+                          </div>
+                        </div>
+                        <div class="d-flex ">
+                          <div class="form-check mr-5">
+                            <label class="form-check-label" >
+                              Active
+                            </label>
+                            <input class="form-check-input" type="checkbox" checked>
+                          </div>
+                          <div class="d-flex alig-items-center">
+                            <i class="ql-icon-recycle-bin icon-xs bg-danger mr-2"></i>
+                            Xóa
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- artifacts content-->
+                <div class="tab-pane fade" id="profile" role="tabpanel">...</div>
+
+                <!-- resources -->
+                <div class="tab-pane fade" id="sources" role="tabpanel">3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $('select').selectpicker();
+  // triggle hover event into navbar
+  $('.navbar-nav .dropdown').hover(function() {
+    $(this).addClass('show');
+    $(this).children('ul').addClass('show')
+  }, function() {
+    $(this).removeClass('show');
+    $(this).children('ul').removeClass('show')
+  });
+</script>
+
+</body>
+
+</html>

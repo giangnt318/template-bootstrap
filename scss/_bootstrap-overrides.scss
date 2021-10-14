@@ -19,6 +19,14 @@ h4 {
   font-weight: 500;
 }
 
+.card {
+  border-radius: 2px !important;
+}
+
+.text-dark {
+  color: $black;
+}
+
 .btn {
   height: 38px;
   font-size: 14px;
@@ -354,4 +362,9 @@ k-list .k-state-selected {
   height: 26px !important;
   line-height: 1;
   font-size: $text-2xs;
+}
+
+// modal
+.modal-content {
+  background-color: #f2f2f2;
 }

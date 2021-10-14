@@ -21,12 +21,22 @@
   .navbar .container, .container {
     min-width: 95%;
   }
+  .nav-tabs .nav-link {
+    padding: 5px 10px !important;
+  }
   .modal-body {
     &.collection .search-relation .form-control{
       width: 7rem;
     }
     .table>:not(caption)>*>* {
       padding: .5rem .25rem;
+    }
+  }
+  .modal-body.relation, .modal-body.collection {
+    .menu-relation {
+      input.form-control {
+        max-width: 200px;
+      }
     }
   }
 }

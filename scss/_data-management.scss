@@ -205,6 +205,13 @@
 .modal-body.relation, .modal-body.collection {
   .menu-relation {
     position: relative;
+    .nav-tabs .nav-link {
+      height: 46px;
+      line-height: 2;
+      font-weight: 500;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+    }
   }
   .action {
     position: absolute;
@@ -215,7 +222,7 @@
   }
   input.form-control {
     height: 40px;
-    width: 200px;
+    width: 220px;
     border-radius: 0;
   }
   .btn-search {
@@ -316,6 +323,17 @@
   }
 }
 
+#artifacts-detail {
+  .media {
+    .title {
+      height: 50px;
+      line-height: 50px;
+      color: $black;
+      font-weight: 500;
+    }
+  }
+}
+
 .caption-table {
   height: 50px;
   line-height: 50px;
@@ -358,5 +376,29 @@
   }
   .ql-icon-search, .ql-icon-checked, .ql-icon-close {
     filter: invert(88%);
+  }
+}
+
+.content-relation {
+  .input-group-text {
+    min-width: 11em;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    border: unset;
+  }
+}
+
+#general-information {
+  .protection {
+    width: calc(100% - 11em);
+  }
+  .ql-icon-recycle-bin {
+    width: 24px;
+    height: 22px;
+    border-radius: $border-radius;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

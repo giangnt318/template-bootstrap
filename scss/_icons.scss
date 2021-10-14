@@ -35,6 +35,11 @@ $icons:
   "reload",
   "arrow-right",
   "connection",
+  "left-arrow",
+  "double-left-arrows",
+  "right-arrow",
+  "double-right-arrows",
+  "recycle-bin",
   "edit";
 
 @each $name in $icons {
@@ -51,4 +56,8 @@ $icons:
 
 .rounded {
   border-radius: $rounded !important;
+}
+
+.ql-icon-left-arrow, .ql-icon-right-arrow {
+  background-size: 8px !important;
 }
