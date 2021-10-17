@@ -167,9 +167,12 @@
   .nav-item {
     margin-right: 5px;
   }
-  .nav-link.active {
-    border-color: $secondary;
-    background: $secondary;
+  .nav-link{
+    font-weight: 500;
+    &.active {
+      border-color: $secondary;
+      background: $secondary;
+    }
   }
   &.border-bottom-secondary {
     border-bottom: 5px solid $secondary;
@@ -208,7 +211,6 @@
     .nav-tabs .nav-link {
       height: 46px;
       line-height: 2;
-      font-weight: 500;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
     }
