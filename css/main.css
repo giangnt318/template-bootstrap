@@ -857,6 +857,10 @@ html {
   border: unset;
 }
 
+.content-relation .label-size, .content-relation .label-size {
+  min-width: 14em;
+}
+
 #general-information .protection {
   width: calc(100% - 11em);
 }

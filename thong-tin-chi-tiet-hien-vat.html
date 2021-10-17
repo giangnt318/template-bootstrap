@@ -256,13 +256,19 @@
                     </a>
                   </li>
                   <li class="nav-item bg-gray">
-                    <a class="nav-link" href="#">Kích thước. TL</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#size" role="tab" aria-controls="size" aria-selected="false">
+                      Kích thước. TL
+                    </a>
                   </li>
                   <li class="nav-item bg-gray">
-                    <a class="nav-link" href="#">TT Lưu trữ</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#storage" role="tab" aria-controls="storage" aria-selected="false">
+                      TT Lưu trữ
+                    </a>
                   </li>
                   <li class="nav-item bg-gray">
-                    <a class="nav-link" href="#">Triển lãm</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#exhibition" role="tab" aria-controls="exhibition" aria-selected="false">
+                      Triển lãm
+                    </a>
                   </li>
                   <li class="nav-item bg-gray">
                     <a class="nav-link" href="#">File đính kèm</a>
@@ -534,9 +540,167 @@
                         <option value="2">Hồ Chí Minh</option>
                       </select>
                     </div>
-                    <div class="input-group mb-3">
-                      <span class="input-group-text">Kỹ thuật chế tác</span>
-                      <input type="text" class="form-control" placeholder="Sưu tầm">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Kỹ thuật chế tác</span>
+                    <input type="text" class="form-control" placeholder="Sưu tầm">
+                  </div>
+                </div>
+
+                <!-- size-->
+                <div class="tab-pane fade" id="size" role="tabpanel">
+                  <div class="row">
+                    <div class="input-group mb-3 col-4 pl-0">
+                      <span class="input-group-text label-size">Trọng lượng (gr)</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                    <div class="input-group mb-3 col-4 pl-0">
+                      <span class="input-group-text" style="min-width: 10em;">Chu vi (cm)</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-group mb-3 col-4 pl-0">
+                      <span class="input-group-text label-size">Dài (cm)</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                    <div class="input-group mb-3 col-4 pl-0">
+                      <span class="input-group-text" style="min-width: 10em;">Rộng (cm)</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                    <div class="input-group mb-3 col-4 pr-0 pl-0">
+                      <span class="input-group-text" style="min-width: 5em;">Cao (cm)</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-group mb-3 col-4 pl-0">
+                      <span class="input-group-text label-size">Đường kính miệng (cm)</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                    <div class="input-group mb-3 col-4 pl-0">
+                      <span class="input-group-text" style="min-width: 10em;">Đg kính đáy (cm)</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-group mb-3 col-4 pl-0">
+                      <span class="input-group-text label-size">Dày/cao (cm)</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                    <div class="input-group mb-3 col-4 pl-0">
+                      <span class="input-group-text" style="min-width: 10em;">Đg kính thân (cm)</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <span class="input-group-text align-items-start label-size">Khác</span>
+                    <textarea class="form-control" rows="7"></textarea>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <span class="input-group-text align-items-start label-size">
+                      Thông tin giám định
+                    </span>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <span class="input-group-text align-items-start label-size">
+                      Hội đồng giám định
+                    </span>
+                    <input type="text" class="form-control" placeholder="Văn phòng Quốc Hội">
+                  </div>
+                  <div class="row">
+                    <div class="input-group mb-3 col-6 pl-0">
+                      <span class="input-group-text label-size">Thời gian giám định</span>
+                      <input type="date" value="2021-12-12" class="form-control">
+                    </div>
+                    <div class="input-group mb-3 col-6 pr-0">
+                      <span class="input-group-text">Số lần giám định</span>
+                      <input type="number" value="1" class="form-control">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- storage-->
+                <div class="tab-pane fade" id="storage" role="tabpanel">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text label-size">Nơi lưu trữ</span>
+                    <input type="text" class="form-control" placeholder="Kho Văn phòng Quốc Hội">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text label-size">Vị trí lưu trữ</span>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text label-size">Số hồ sơ bảo quản</span>
+                    <input type="number" value="1" class="form-control">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text label-size">Tình trạng bảo quản</span>
+                    <input type="text" class="form-control" placeholder="Nguyên vẹn">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text label-size">Chế độ xử lý bảo quản</span>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text label-size">Tu sửa/Phục chế</span>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                </div>
+
+                <!-- exhibition-->
+                <div class="tab-pane fade" id="exhibition" role="tabpanel">
+                  <div class="row mb-3">
+                    <div class="d-flex col-10 pl-0">
+                      <div class="d-flex align-items-stretch mr-3 select-relation">
+                        <label class="input-group-text label-relation">Chuyên đề chung</label>
+                        <select class="selectpicker ql-multiselect w-100" multiple placeholder="Chọn Chuyên đề">
+                          <option>Chuyên đề 1</option>
+                          <option>Chuyên đề 2</option>
+                          <option>Chuyên đề 3</option>
+                        </select>
+                      </div>
+                      <input type="number" value="1" class="form-control ml-auto quantity">
+                    </div>
+                    <div class="col-2">
+                      <div class="d-flex justify-content-end ml-3">
+                        <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                          <i class="d-block ql-icon-green-checked icon-xs"></i>
+                        </button>
+                        <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                          <i class="d-block ql-icon-red-close icon-xs"></i>
+                        </button>
+                        <button class="btn bg-light-gray-2">
+                          <i class="d-block ql-icon-blue-reload icon-s"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="d-flex col-10 pl-0">
+                      <div class="d-flex align-items-stretch mr-3 select-relation">
+                        <label class="input-group-text label-relation">Chuyên đề Hiện vật</label>
+                        <select class="selectpicker ql-multiselect w-100" multiple placeholder="Chọn Chuyên đề">
+                          <option>Chuyên đề 1</option>
+                          <option>Chuyên đề 2</option>
+                          <option>Chuyên đề 3</option>
+                        </select>
+                      </div>
+                      <input type="number" value="1" class="form-control ml-auto quantity">
+                    </div>
+                    <div class="col-2">
+                      <div class="d-flex justify-content-end ml-3">
+                        <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                          <i class="d-block ql-icon-green-checked icon-xs"></i>
+                        </button>
+                        <button class="btn bg-light-gray-2 mr-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                          <i class="d-block ql-icon-red-close icon-xs"></i>
+                        </button>
+                        <button class="btn bg-light-gray-2">
+                          <i class="d-block ql-icon-blue-reload icon-s"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
